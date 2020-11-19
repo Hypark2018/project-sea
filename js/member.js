@@ -14,6 +14,7 @@ async function signUp(username, nickname, password) {
         return;
     }
     const resultName = response.data.signUp.username;
+    window.location.href = "./login-page.html";
 }
 
 async function signIn(username, password) {
@@ -28,6 +29,7 @@ async function signIn(username, password) {
         }
     `
 
+
     const result = await fetch(path, request(query));
     
 
@@ -39,6 +41,7 @@ async function signIn(username, password) {
     // const access_token = response.data.signIn.access_token;
     // const refresh_token = response.data.signIn.refresh_token;
     // const scope = response.data.signIn.scope;
+    window.location.reload();
 }
 
 async function myProfile() {
@@ -64,7 +67,13 @@ async function myProfile() {
     const username = response.data.myProfile.username;
     const permission = response.data.myProfile.permission;
     const createdTime = response.data.myProfile.createdTime;
+
+    console.log(nickname);
+    console.log(document.querySelector('.nick_name').value);
+    document.querySelector('.nick_name').value = nickname;
 }
+
+
 
 async function signOut() {
     const query = `
@@ -80,7 +89,9 @@ async function signOut() {
         console.log(response.errors[0]);
         return;
     }
-    const signOut = response.data.signOut; // true or false
+    const signOut = response.data.signOut; // true or false 
+
+    window.location.reload();
 }
 
 async function isSign() {
@@ -92,6 +103,7 @@ async function isSign() {
         }
     `
 
+
     const result = await fetch(path, request(query));
 
     const response = await result.json();
@@ -100,14 +112,23 @@ async function isSign() {
         return;
     }
     const username = response.data.myProfile.username;
+    console.log(username);
     if(username) {
-
-    }else {
-        
+        const value1 = document.querySelector(".logout");
+        value1.toggleAttribute('hidden');
+        const value2 = document.querySelector(".login");
+        value2.toggleAttribute('hidden');
+        const value3 = document.querySelector(".signup");
+        value3.toggleAttribute('hidden');
+        const value4 = document.querySelector(".mypage");
+        value4.toggleAttribute('hidden');
     }
+
+    return username;
 }
 
 // signUp("test100", "test100", "test");
 // signIn('test1', 'test');
 // myProfile();
+// isSign();
 // signOut();

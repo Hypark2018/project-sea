@@ -23,9 +23,16 @@
             <div class="container"> 
                 <div class="header">
                     <div class="header-menu">
-                        <a href="login-page.html"> 로그인 </a>
-                        <a href="signup-page.html"> 회원가입 </a>
-                        <a href="my-page.html"> 마이페이지 </a>
+                        <ul class="area-links">
+                            <li  class="login"> <a href="login-page.html" class="mem-bt"> 로그인 </a> </li>
+                            <li hidden class="logout"> <a href="#" onclick="signOut()" class="mem-bt"> 로그아웃 </a> </li>
+                            <li  class="signup"> <a href="signup-page.html" class="mem-bt"> 회원가입 </a> </li>
+                            <li hidden class="mypage"> <a href="my-page.html" class="mem-bt" onclick=""> 마이페이지</a> </li>
+                        </ul>
+                        <!-- <a href="login-page.html" class="login"> 로그인 </a>
+                        <a hidden href="#" onclick="signOut()" class="logout"> 로그아웃 </a>
+                        <a href="signup-page.html" class="signup"> 회원가입 </a>
+                        <a hidden href="my-page.html" class="mypage"> 마이페이지 </a> -->
                     </div>
                 </div>
             </div>
@@ -363,5 +370,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main-page.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/member.js"></script>
+    <script type="text/javascript">
+        isSign()
+    </script>
 </body>
 </html>

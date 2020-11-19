@@ -9,8 +9,6 @@
 	<link rel="stylesheet" href="css/ui.css">
     <link rel="stylesheet" href="css/ui-page.css">
     <link rel="stylesheet" href="css/login-page.css">
-
-    <script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
     <div id="top" class="pswrap width1160">
@@ -34,9 +32,10 @@
                 </div>
                 <div class="area-links">
                     <ul>
-                        <li> <a href="login-page.html" class="mem-bt "> 로그인 </a> </li>
-                        <li> <a href="signup-page.html" class="mem-bt "> 회원가입 </a> </li>
-                        <li> <a href="my-page.html" class="mem-bt "> 마이페이지</a> </li>
+                        <li  class="login"> <a href="login-page.html" class="mem-bt "> 로그인 </a> </li>
+                        <li hidden class="logout"> <a href="#" onclick="signOut();" class="mem-bt"> 로그아웃 </a> </li>
+                        <li  class="signup"> <a href="signup-page.html" class="mem-bt "> 회원가입 </a> </li>
+                        <li hidden class="mypage"> <a href="my-page.html" class="mem-bt "> 마이페이지</a> </li>
                     </ul>
                 </div>
             </div>
@@ -72,13 +71,13 @@
                 <h1> 로그인 </h1>
                 <form>
                     <dl>
-                        <dd><input type="text" placeholder="아이디"></dd>
+                        <dd><input class="username" type="text" placeholder="이메일"> </dd>
                     </dl>    
                     <dl>
-                        <dd><input type="password" placeholder="비밀번호"></dd>
+                        <dd><input class="password" type="password" placeholder="비밀번호"> </dd>
                     </dl>    
                     <dl>
-                        <input type="submit" value="로그인">  
+                        <input onclick="signIn(document.querySelector('.username').value, document.querySelector('.password').value)" type="button" value="로그인">  
                     </dl> 
                 </form>
             </div>
@@ -104,6 +103,16 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/member.js"></script>
+    <script type="text/javascript">
+        isSign().then((res) => {
+            if(res) {
+                window.location.href = "./Main-page.html";
+            }
+        })
 
+
+    </script>
 </body>
 </html>

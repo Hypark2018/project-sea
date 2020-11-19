@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/ui-page.css">
     <link rel="stylesheet" href="css/signup-page.css">
 
-    <script type="text/javascript" src="js/graphql.js"></script>
 </head>
 <body>
     <div id="top" class="pswrap width1160">
@@ -34,9 +33,10 @@
                 </div>
                 <div class="area-links">
                     <ul>
-                        <li> <a href="login-page.html" class="mem-bt "> 로그인 </a> </li>
-                        <li> <a href="signup-page.html" class="mem-bt "> 회원가입 </a> </li>
-                        <li> <a href="my-page.html" class="mem-bt "> 마이페이지</a> </li>
+                        <li  class="login"> <a href="login-page.html" class="mem-bt "> 로그인 </a> </li>
+                        <li hidden class="logout"> <a href="#" onclick="signOut()" class="mem-bt"> 로그아웃 </a> </li>
+                        <li  class="signup"> <a href="signup-page.html" class="mem-bt "> 회원가입 </a> </li>
+                        <li hidden class="mypage"> <a href="my-page.html" class="mem-bt "> 마이페이지</a> </li>
                     </ul>
                 </div>
             </div>
@@ -74,17 +74,12 @@
                     <dl>
                         <dt>이메일</dt>
                         <dd>
-                            <input type="email" placeholder="이메일 입력"> @
-                            <select>
-                                <option>gmail.com</option>
-                                <option>naver.com</option>
-                                <option>daum.net</option>
-                            </select>
+                            <input class="username" type="email" placeholder="이메일 ex)abc@ptu.ac.kr">
                         </dd>
                     </dl>  
                     <dl>
                         <dt>비밀번호</dt>
-                        <dd><input type="password" placeholder="비밀번호 입력"></dd>
+                        <dd><input class="password" type="password" placeholder="비밀번호 입력"></dd>
                     </dl>    
                     <dl>
                         <dt>비밀번호 확인</dt>
@@ -92,7 +87,7 @@
                     </dl>
                     <dl>
                         <dt>닉네임</dt>
-                        <dd><input type="text" placeholder="아이디 입력"></dd>
+                        <dd><input class="nickname" type="text" placeholder="아이디 입력"></dd>
                     </dl>         
                     <dl>
                         <dt>이름</dt>
@@ -111,7 +106,7 @@
                             <label for="female"> 여자 </label>
                         </dd>
                     </dl>   
-                    <input type="submit" value="회원가입">  
+                    <input onclick="signUp(document.querySelector('.username').value, document.querySelector('.nickname').value, document.querySelector('.password').value)"type="button" value="회원가입">  
                 </form>
             </div>
         </section>
@@ -136,6 +131,15 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/member.js"></script>
+    <script type="text/javascript">
+        isSign().then((res) => {
+            if(res) {
+                window.location.href = "./Main-page.html";
+            }
+        })
 
+    </script>
 </body>
 </html>

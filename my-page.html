@@ -9,13 +9,14 @@
 	<link rel="stylesheet" href="css/ui.css">
     <link rel="stylesheet" href="css/ui-page.css">
     <link rel="stylesheet" href="css/my-page.css">
+
 </head>
 <body>
     <div id="wrap">
         <div id=header>
             <div class="member-info">
                 <a href="Main-page.html" class="mem-bt "> 메인페이지 </a>
-                <a href="login-page.html" class="mem-bt "> 로그아웃 </a>
+                <a href="Main-page.html" class="mem-bt logout" onclick="signOut()"> 로그아웃 </a>
             </div>
         </div>
         
@@ -23,7 +24,7 @@
             <div class="gallery-header">
                 <div class="gallery-top-bar">
                     <div class="gallery_info">
-                        <strong class="nick_name"> 조선제일검 </strong> 님의 마이페이지 입니다.
+                        <strong class="nick_name" value="조선제일검"> 조선제일검 </strong> 님의 마이페이지 입니다.
                     </div>
                 </div>
             </div>
@@ -228,6 +229,12 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/member.js"></script>
+    <script type="text/javascript">
+        myProfile();
+
+    </script>
 
 </body>
 </html>
