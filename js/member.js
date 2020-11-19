@@ -68,9 +68,7 @@ async function myProfile() {
     const permission = response.data.myProfile.permission;
     const createdTime = response.data.myProfile.createdTime;
 
-    console.log(nickname);
-    console.log(document.querySelector('.nick_name').value);
-    document.querySelector('.nick_name').value = nickname;
+    document.querySelector('.nick_name').innerHTML = nickname;
 }
 
 
