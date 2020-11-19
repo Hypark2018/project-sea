@@ -7,11 +7,7 @@ async function signUp(username, nickname, password) {
         }
     `
     
-    const result = await fetch('http://192.168.219.106:3000/graphql', {
-        method: 'POST',
-        headers: { 'Content-Type': "application/json" },
-        body: JSON.stringify({query})
-    });
+    const result = await fetch(path, request(query));
     const response = await result.json();
     if(response.errors != null) {
         console.log(response.errors[0]);
@@ -32,20 +28,17 @@ async function signIn(username, password) {
         }
     `
 
-    const result = await fetch('http://192.168.219.106:3000/graphql', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({query})
-    })
+    const result = await fetch(path, request(query));
+    
 
     const response = await result.json();
     if(response.errors != null) {
         console.log(response.errors[0]);
         return;
     }
-    // const access_token = response.data.access_token;
-    // const refresh_token = response.data.refresh_token;
-    // const scope = response.data.scope;
+    // const access_token = response.data.signIn.access_token;
+    // const refresh_token = response.data.signIn.refresh_token;
+    // const scope = response.data.signIn.scope;
 }
 
 async function myProfile() {
@@ -60,11 +53,7 @@ async function myProfile() {
         }
     `
 
-    const result = await fetch('http://192.168.219.106:3000/graphql', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({query})
-    })
+    const result = await fetch(path, request(query));
 
     const response = await result.json();
     if(response.errors != null) {
@@ -84,11 +73,7 @@ async function signOut() {
         }
     `
 
-    const result = await fetch('http://192.168.219.106:3000/graphql', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({query})
-    })
+    const result = await fetch(path, request(query));
 
     const response = await result.json();
     if(response.errors != null) {
@@ -98,7 +83,31 @@ async function signOut() {
     const signOut = response.data.signOut; // true or false
 }
 
+async function isSign() {
+    const query = `
+        query {
+            myProfile {
+                username
+            }
+        }
+    `
+
+    const result = await fetch(path, request(query));
+
+    const response = await result.json();
+    if(response.errors != null) {
+        console.log(response.errors[0]);
+        return;
+    }
+    const username = response.data.myProfile.username;
+    if(username) {
+
+    }else {
+        
+    }
+}
+
 // signUp("test100", "test100", "test");
-//signIn('test1', 'test');
+// signIn('test1', 'test');
 // myProfile();
 // signOut();
