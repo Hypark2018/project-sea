@@ -1,0 +1,233 @@
+.board-list-body {
+    border-bottom: 2px solid #3C63D9;
+}
+
+.board-list-wrap {
+    padding: 50px;
+}
+
+.board-name {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.board-list-head,
+.board-list-body .item{
+    font-size: 0;
+    padding: 10px 0;
+}
+
+.board-list-head:not(:last-child) {
+    border-top: 2px solid #3C63D9;
+    border-bottom: 1px solid #999;
+}
+
+.board-list-body .item {
+    border-bottom: 1px solid #ccc;
+}
+
+.board-list-head > div,
+.board-list-body .item > div {
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+}
+
+.board-list-head > div {
+    font-weight: 600;
+}
+
+.board-list-body div.title {
+    text-align: left;
+}
+
+.board-list-body .title a:hover {
+    text-decoration: underline;
+}
+
+.board-list .title {
+    width: 60%;
+}
+
+.board-list .writer {
+    width: 21.3%;
+}
+
+.board-list .date {
+    width: 18.7%;
+}
+
+.paging {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.paging a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.paging a.bt {
+    width: 30px;
+    height: 30px;
+    background-color: #3C63D9; 
+    background-image: url(../images/page_bt.png);
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+
+.paging a.bt:hover {
+    background-color: gray;
+}
+    
+.paging a.first {
+    background-position: 10px -40px;
+}
+
+.paging a.prev {
+    background-position: 10px 10px;
+    margin-right: 5px;
+}
+
+.paging a.next {
+    background-position: -40px 10px;
+    margin-left: 5px;
+}
+
+.paging a.last {
+    background-position: -40px -40px;
+}
+
+.paging a.num {
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.paging a.num.on {
+    color: #3C63D9;
+}
+
+.paging a.num:hover {
+    text-decoration: underline;
+}
+
+.board-name {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.board-btns {
+    margin-top: 15px;
+    text-align: left;
+    height: 40px;
+}
+
+.board-btns input[type='button'] {
+    padding: 0.1em 1.0em;
+    height: 40px;
+    width: 90px;
+    line-height: 33px;
+    font-size: 15.5px;
+    font-weight: bold;
+}
+
+
+.board-btns input:hover {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.board-btns .all-board {
+    border: 1px solid black;  
+    background-color: #3C63D9;
+    color: white;
+}
+
+.board-btns .interest-board {
+    background: white;
+    margin-left: 2%;
+    margin-right: auto;
+    border: 1px solid #3C63D9; 
+    color: #3C63D9;
+    border-bottom: 3px solid #3C63D9; 
+}
+
+.board-btns .write-board {
+    border: 1px solid black;  
+    background-color: #3C63D9;
+    color: white;
+}
+
+.fr {float: right;}
+
+.board-search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.board-search-form .select_area {
+    display: block;
+    width: 109px;
+    height: 35px;
+    padding-left: 8px;
+    line-height: 30px;
+    margin: 3px 0 0 3px;
+    background-color: #3C63D9;
+    font-size: 14px;
+    color: #fff;
+}
+
+.board-search-form input[type='search'] {
+    height: 35px;
+    margin-left: 0.6em;
+    border: 3px solid #3C63D9;
+    font-size: 1rem;
+    width: 300px;
+}
+
+.board-search-form input[type='submit'] {
+    margin-left: 1px;
+    border: 1px solid #3C63D9;
+    background-color: #3C63D9;
+    font-size: 14px;
+    padding: 0.5em 1em 0.5em 1em;
+    text-decoration: none;
+    color: white;
+    height: 53px;
+    height: 35px;
+}
+
+.board-search-form input[type='submit']:hover {
+    cursor: pointer;
+}
+
+.visit-history p { display: inline-block; font-size: 14px; font-weight: 600; padding: 7px 0 0 0;} 
+
+.select_area {
+    border: 2px solid black;
+    display: inline-block;
+    width: 109px;
+    height: 30px;
+    padding-left: 8px;
+    line-height: 30px;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    color: #3C63D9;
+    margin: -2px 0 0 1px;
+}
+
+
+.team-people { margin-left: 15px; }
+
+.team-notice { margin-top: 50px; }
+.team-notice h2 { text-align: center; font-size: 24px; font-weight: 700; color: crimson; margin-bottom: 15px;}
+
+
+.board-list-wrap h2 { text-align: center; font-size: 24px; font-weight: 700; color: #3C63D9; margin-bottom: 15px; }

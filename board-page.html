@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/ui-page.css">
+    <link rel="stylesheet" href="css/board-page.css">
+</head>
+<body>
+    <div id="top" class="pswrap width1160">
+        <!-- header -->
+        <header class="psheader">
+            <div class="pshead">
+                <h1 class="ps-logo">
+                    <a href="Main-page.html"> <img src="images/page-logo2.png" style="width: 266px; height: 50px;"> </a>
+                </h1>
+                <div id="search-wrap" class="wrap-search"> 
+                    <form id="searchform" name="search-process" class="search-smit">
+                        <fieldset> 
+                            <div class="top-search">
+                                <div class="inner-search">
+                                    <input class="in-keyword" type="text" name="search" id="preSWord" title="검색어 입력" value placeholder="프로젝트 & 통합검색">
+                                </div>
+                                <button type="submit" class="sp-img btn-search"> <span class="blind"> 검색 </span> </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="area-links">
+                    <ul>
+                        <li> <a href="login-page.html" class="mem-bt "> 로그인 </a> </li>
+                        <li> <a href="signup-page.html" class="mem-bt "> 회원가입 </a> </li>
+                        <li> <a href="my-page.html" class="mem-bt "> 마이페이지</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- menu -->
+        <ul class="menu">
+            <li class="menu-list"> 
+                <a href="board-page.html" class="menu-content"> 공지 </a>
+            </li>
+            <li class="menu-list"> 
+                <a href="board-page.html" class="menu-content"> 자유 </a>
+            </li>
+            <li class="menu-list dropdown"> 
+                <a href="javascript:void(0)" class="menu-content dropbtn"> 프로젝트 </a>
+                <div class="dropdown-content"> 
+                    <a href="project-will-page.html"> 프로젝트 모집 </a>
+                    <a href="project-ing-page.html"> 프로젝트 진행중 </a>
+                    <a href="project-ed-page.html"> 프로젝트 완료 </a>
+                </div>
+            </li>
+            <li class="menu-list"> 
+                <a href="board-page.html" class="menu-content"> 학과 </a>
+            </li>
+            <li class="menu-list"> 
+                <a href="https://entrance.ptu.ac.kr/contents/www/cor/schedule.html" class="menu-content"> 학사일정 </a>
+            </li>
+        </ul>
+
+        <!-- primary -->
+        <section class="primary">
+            <h4 class="board-name"> 자유 게시판 </h4>
+
+            <div class="board-list-wrap">
+                <div class="board-list"> 
+                    <div class="board-list-head">
+                        <div class="writer"> 글쓴이 </div>
+                        <div class="title"> 제목 </div>
+                        <div class="date"> 작성일 </div>
+                        <div class="view-num"> 조회수 </div>
+                        <div class="like-num"> 추천수 </div>
+                    </div>
+                    <div class="board-list-body">
+                        <div class="item">
+                            <div class="writer"> 너구리 </div>
+                            <div class="title"> <a href="#"> Legends Never die </a> </div>
+                            <div class="date"> 2020-11-04 </div>
+                            <div class="view-num"> 89 </div>
+                            <div class="like-num"> 10 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 클템 </div>
+                            <div class="title"> <a href="#"> LCK is King </a> </div>
+                            <div class="date"> 2020-10-29 </div>
+                            <div class="view-num"> 99 </div>
+                            <div class="like-num"> 11 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> Damwon Gaming </div>
+                            <div class="title"> <a href="#"> 2020 Worlds Champion </a> </div>
+                            <div class="date"> 2020-10-25 </div>
+                            <div class="view-num"> 189 </div>
+                            <div class="like-num"> 101 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 쇼메이커 </div>
+                            <div class="title"> <a href="#"> King's Back </a> </div>
+                            <div class="date"> 2020-10-23 </div>
+                            <div class="view-num"> 99 </div>
+                            <div class="like-num"> 33 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 쵸비상 </div>
+                            <div class="title"> <a href="#"> DRX is king </a> </div>
+                            <div class="date"> 2020-10-22 </div>
+                            <div class="view-num"> 109 </div>
+                            <div class="like-num"> 21 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 고스트 </div>
+                            <div class="title"> <a href="#"> Damwon is Legend </a> </div>
+                            <div class="date"> 2020-10-19 </div>
+                            <div class="view-num"> 44 </div>
+                            <div class="like-num"> 13 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 너구리 </div>
+                            <div class="title"> <a href="#"> Legends Never die </a> </div>
+                            <div class="date"> 2020-11-04 </div>
+                            <div class="view-num"> 89 </div>
+                            <div class="like-num"> 10 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 클템 </div>
+                            <div class="title"> <a href="#"> LCK is King </a> </div>
+                            <div class="date"> 2020-10-29 </div>
+                            <div class="view-num"> 99 </div>
+                            <div class="like-num"> 11 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> Damwon Gaming </div>
+                            <div class="title"> <a href="#"> 2020 Worlds Champion </a> </div>
+                            <div class="date"> 2020-10-25 </div>
+                            <div class="view-num"> 189 </div>
+                            <div class="like-num"> 101 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 쇼메이커 </div>
+                            <div class="title"> <a href="#"> King's Back </a> </div>
+                            <div class="date"> 2020-10-23 </div>
+                            <div class="view-num"> 99 </div>
+                            <div class="like-num"> 33 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 쵸비상 </div>
+                            <div class="title"> <a href="#"> DRX is king </a> </div>
+                            <div class="date"> 2020-10-22 </div>
+                            <div class="view-num"> 109 </div>
+                            <div class="like-num"> 21 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 고스트 </div>
+                            <div class="title"> <a href="#"> Damwon is Legend </a> </div>
+                            <div class="date"> 2020-10-19 </div>
+                            <div class="view-num"> 44 </div>
+                            <div class="like-num"> 13 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 너구리 </div>
+                            <div class="title"> <a href="#"> Legends Never die </a> </div>
+                            <div class="date"> 2020-11-04 </div>
+                            <div class="view-num"> 89 </div>
+                            <div class="like-num"> 10 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 클템 </div>
+                            <div class="title"> <a href="#"> LCK is King </a> </div>
+                            <div class="date"> 2020-10-29 </div>
+                            <div class="view-num"> 99 </div>
+                            <div class="like-num"> 11 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> Damwon Gaming </div>
+                            <div class="title"> <a href="#"> 2020 Worlds Champion </a> </div>
+                            <div class="date"> 2020-10-25 </div>
+                            <div class="view-num"> 189 </div>
+                            <div class="like-num"> 101 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 쇼메이커 </div>
+                            <div class="title"> <a href="#"> King's Back </a> </div>
+                            <div class="date"> 2020-10-23 </div>
+                            <div class="view-num"> 99 </div>
+                            <div class="like-num"> 33 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 쵸비상 </div>
+                            <div class="title"> <a href="#"> DRX is king </a> </div>
+                            <div class="date"> 2020-10-22 </div>
+                            <div class="view-num"> 109 </div>
+                            <div class="like-num"> 21 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 고스트 </div>
+                            <div class="title"> <a href="#"> Damwon is Legend </a> </div>
+                            <div class="date"> 2020-10-19 </div>
+                            <div class="view-num"> 44 </div>
+                            <div class="like-num"> 13 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 너구리 </div>
+                            <div class="title"> <a href="#"> Legends Never die </a> </div>
+                            <div class="date"> 2020-11-04 </div>
+                            <div class="view-num"> 89 </div>
+                            <div class="like-num"> 10 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 클템 </div>
+                            <div class="title"> <a href="#"> LCK is King </a> </div>
+                            <div class="date"> 2020-10-29 </div>
+                            <div class="view-num"> 99 </div>
+                            <div class="like-num"> 11 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> Damwon Gaming </div>
+                            <div class="title"> <a href="#"> 2020 Worlds Champion </a> </div>
+                            <div class="date"> 2020-10-25 </div>
+                            <div class="view-num"> 189 </div>
+                            <div class="like-num"> 101 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 쇼메이커 </div>
+                            <div class="title"> <a href="#"> King's Back </a> </div>
+                            <div class="date"> 2020-10-23 </div>
+                            <div class="view-num"> 99 </div>
+                            <div class="like-num"> 33 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 쵸비상 </div>
+                            <div class="title"> <a href="#"> DRX is king </a> </div>
+                            <div class="date"> 2020-10-22 </div>
+                            <div class="view-num"> 109 </div>
+                            <div class="like-num"> 21 </div>
+                        </div>
+                        <div class="item">
+                            <div class="writer"> 고스트 </div>
+                            <div class="title"> <a href="#"> Damwon is Legend </a> </div>
+                            <div class="date"> 2020-10-19 </div>
+                            <div class="view-num"> 44 </div>
+                            <div class="like-num"> 13 </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="board-btns">   
+                    <input class="all-board" type="button" value="전체글">
+                    <input class="interest-board" type="button" value="인기글" >
+                    <input class="fr write-board" type="button" value="글쓰기" >
+                </form>
+            
+                <div class="paging">
+                    <a href="#" class="bt first"> 처음 </a>
+                    <a href="#" class="bt prev"> 이전 </a>
+                    <a href="#" class="num"> 1 </a>
+                    <a href="#" class="num"> 2 </a>
+                    <a href="#" class="num"> 3 </a>
+                    <a href="#" class="num"> 4 </a>
+                    <a href="#" class="num"> 5 </a>
+                    <a href="#" class="num"> 6 </a>
+                    <a href="#" class="num"> 7 </a>
+                    <a href="#" class="num"> 8 </a>
+                    <a href="#" class="num"> 9 </a>
+                    <a href="#" class="bt next"> 다음 </a>
+                    <a href="#" class="bt last"> 마지막 </a>
+                </div>
+                <form class="board-search-form">
+                    <select class="select_area">
+                        <option class=""> 전체 </option>
+                        <option class=""> 글쓴이 </option>
+                        <option class=""> 제목 </option>
+                        <option class=""> 카테고리 </option>
+                    </select>
+                    <input type="search">
+                    <input class="search-btn" type="submit" value="검색">
+                </form>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <h2 class="ir_su">푸터 영역</h2>
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">사이트 도움말</a></li>
+                        <li><a href="#">사이트 이용약관</a></li>
+                        <li><a href="#">사이트 운영규칙</a></li>
+                        <li><a href="#"><strong>개인정보 취급 방침</strong></a></li>
+                        <li><a href="#">책임의 한계와 법적고지</a></li>
+                        <li><a href="#">게시 중단 요청</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <address>
+                        Copyright&copy;Projectsea Company All Right Reserved
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

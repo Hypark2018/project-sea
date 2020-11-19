@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/ui-page.css">
+    <link rel="stylesheet" href="css/detail-page.css">
+    <link rel="stylesheet" href="css/board-page.css">
+</head>
+<body>
+    <div id="top" class="pswrap width1160 view-wrap">
+        <!-- header -->
+        <header class="psheader">
+            <div class="pshead">
+                <h1 class="ps-logo">
+                    <a href="Main-page.html"> <img src="images/page-logo2.png" style="width: 266px; height: 50px;"> </a>
+                </h1>
+                <div id="search-wrap" class="wrap-search"> 
+                    <form id="searchform" name="search-process" class="search-smit">
+                        <fieldset> 
+                            <div class="top-search">
+                                <div class="inner-search">
+                                    <input class="in-keyword" type="text" name="search" id="preSWord" title="검색어 입력" value placeholder="프로젝트 & 통합검색">
+                                </div>
+                                <button type="submit" class="sp-img btn-search"> <span class="blind"> 검색 </span> </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="area-links">
+                    <ul>
+                        <li> <a href="login-page.html" class="mem-bt "> 로그인 </a> </li>
+                        <li> <a href="signup-page.html" class="mem-bt "> 회원가입 </a> </li>
+                        <li> <a href="my-page.html" class="mem-bt "> 마이페이지</a> </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </header>
+
+        <!-- menu -->
+        <ul class="menu">
+            <li class="menu-list"> 
+                <a href="board-page.html" class="menu-content"> 공지 </a>
+            </li>
+            <li class="menu-list"> 
+                <a href="board-page.html" class="menu-content"> 자유 </a>
+            </li>
+            <li class="menu-list dropdown"> 
+                <a href="javascript:void(0)" class="menu-content dropbtn"> 프로젝트 </a>
+                <div class="dropdown-content"> 
+                    <a href="project-will-page.html"> 프로젝트 모집 </a>
+                    <a href="project-ing-page.html"> 프로젝트 진행중 </a>
+                    <a href="project-ed-page.html"> 프로젝트 완료 </a>
+                </div>
+            </li>
+            <li class="menu-list"> 
+                <a href="board-page.html" class="menu-content"> 학과 </a>
+            </li>
+            <li class="menu-list"> 
+                <a href="https://entrance.ptu.ac.kr/contents/www/cor/schedule.html" class="menu-content"> 학사일정 </a>
+            </li>
+        </ul>
+
+        <!-- primary -->
+        <div class="wrap_inner">
+            <main id="container" class="gallery_view">
+                <section>
+                    <header>
+                        <div class="page_head clear">
+                            <div class="fl clear">
+                                <h2>
+                                    <a href="#"> 자유 게시판 </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </header>
+                    <article>
+                        <div class="board-wrap"> 
+                            <div class="board-box">
+                                <div class="visit-history"></div>
+                            </div> 
+                        </div>
+                    </article>
+                    <article>
+                        <div class="view-content-wrap"> 
+                            <header>
+                                <div class="galleryview-head">
+                                    <h3 class="title">
+                                        <span class="title_subject"> 과팅 아무학번 여자 3명 ㄹㅇ 없냐? </span>
+                                    </h3>
+                                    <div class="gallery-writer" data-nick="조선제일검" data-uid="happyd12" data-ip data-loc="view">
+                                        <div class="fl">
+                                            <span class="nickname" title="조선제일검"><em> 조선제일검 </em></span> 
+                                            <span class="gallery-date" title="2020-11-11"> 2020.11.11 </span>
+                                        </div>
+                                        <div class="fr">
+                                            <span class="gallery-count"> 조회 1002 </span>
+                                            <span class="gallery-reply_num"> 추천 333 </span>
+                                            <span class="gallery-comment"> 댓글 1 </span>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </header>
+                            <div class="galleryview-content">
+                                <div class="inner clear">
+                                    <div class="writing-view-box">
+                                        <pre></pre>
+                                        <!-- <div style="overflow:hidden; width: 900px"></div> -->
+                                        <div class="galleryview-body">
+                                            <p style="text-align: left;"> </p>
+                                            <div>
+                                                <img src="images/board-detail.jpg" style="cursor:pointer;">
+                                            </div>
+                                            <div><br><br><br><br>
+                                            <div>아니 ㄹㅇ로다가 </div>
+                                            <div>우리 스타일 괜찮고, 마인드 좋고 재밋고 </div><br><br>
+                                            <div>농담 / 장난 다 잘 받아주는 남자 3명인데 </div><br><br>
+                                            <div>진짜 아무도 없음?? </div><br><br><br>
+                                            <div>코로나 걱정 안 해도됌. ㄹㅇ 집돌이 3명이라 </div><br>
+                                            <div>집 앞 피방도 잘 안나감ㅋㅋ 집에서 밥 해먹어가지고 </div><br>
+                                            <div>ㄹㅇ 이시대의 진정한 안전남 3명인데 </div><br><br><br>
+                                            <div>심지어 뇌섹남 3명인데, 외모 / 몸매 안봄. 성격만 잘 맞고 </div><br>
+                                            <div>재밋고 잘 웃고 잘 먹는 여자 3명 모십니다^ ㅁ ^ </div><br></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_recommend_box clear">
+                                    <div class="inner fl">
+                                        <div class="up-num-box">
+                                            <p class="up-num font-color"> 333 </p>
+                                        </div>
+                                        <button type="button" class="btn-up"> 
+                                            <em class="sp-img icon-up"></em>
+                                        </button>
+                                    </div>
+                                    <div class="inner fr">
+                                        <button type="button" class="btn-down"> 
+                                            <em class="sp-img icon-down"></em>
+                                        </button>
+                                        <div class="down-num-box">
+                                            <p class="down-num"> 1 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-comment">
+                            <div id="comment-wrap" class="comment-wrap show">
+                                <div class="comment-count">
+                                    <div class="fl num-box">
+                                        전체 리플
+                                        <em class="font-red">
+                                            <span id=""> 8 </span>
+                                        </em>
+                                        개
+                                    </div>
+                                    <div class="fr">
+                                        <button type="button" class="btn-close">
+                                            <span>댓글 닫기</span>
+                                            <em class="sp-img icon-more"></em>
+                                        </button>
+                                        <button type="button" class="btn-refresh">
+                                            <span>새로 고침</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="comment-box">
+                                    <ul class="cmt-list">
+                                        <li class="ub-content">
+                                            <div class="cmt-info clear">
+                                                <div class="cmt-nickbox">
+                                                    <span class="gallery-writer ub-writer">
+                                                        <span class="nickname">
+                                                            <em title="조선제일미녀">조선제일미녀</em>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="clear cmt-txtbox btn-reply-write-all">
+                                                    <p class="usertxt ub-word"> ㅋㅋㅋ 재밋네요 </p>
+                                                </div> 
+                                                <div class="fr clear">
+                                                    <span class="date_time"> 11.11 08:47:06 </span>
+                                                    <div class="cmt-del">
+                                                        <button type="button" class="btn-delete">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ub-content">
+                                            <div class="cmt-info clear">
+                                                <div class="cmt-nickbox">
+                                                    <span class="gallery-writer ub-writer">
+                                                        <span class="nickname">
+                                                            <em title="조선제일미녀">조선제일미녀</em>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="clear cmt-txtbox btn-reply-write-all">
+                                                    <p class="usertxt ub-word"> ㅋㅋㅋ저희15학번 여자 3명인데 괜찮아요?? </p>
+                                                </div> 
+                                                <div class="fr clear">
+                                                    <span class="date_time"> 11.11 08:48:11 </span>
+                                                    <div class="cmt-del">
+                                                        <button type="button" class="btn-delete"> 삭제 </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="reply show">
+                                                <div class="reply-box">
+                                                    <ul class="reply-list">
+                                                        <li>
+                                                            <div class="cmt-write-box small clear" id="cmt-write-box">
+                                                                <div class="fl">
+                                                                    <div class="user-info-input">
+                                                                        <input type="text" value="조선 제일 검" readonly="readonly">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cmt-txt-cont">
+                                                                    <div class="cmt-write">
+                                                                        <textarea maxlength="400" onlick="reply_length_count()"></textarea>
+                                                                    </div>
+                                                                    <div class="cmt-cont-bottom clear">
+                                                                        <div class="fr">
+                                                                            <button class="btn-blue small repley-add">등록</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ub-content">
+                                                            <div class="reply-info clear">
+                                                                <div class="cmt-nickbox">
+                                                                    <span class="gallery-writer ub-writer" data-nick="조선제일검">
+                                                                        <span class="nick_name">
+                                                                            <em title="조선제일검">조선제일검</em>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="clear cmt-txtbox">
+                                                                    <p class="usertxt ub-word">
+                                                                        아... 누나들 여기서 이러시면 안...주 바로 사가죠 ^ ㅁ ^ 
+                                                                    </p>
+                                                                </div>
+                                                                <div class="fr clear">
+                                                                    <span class="date-time"> 11.11 10:53:45 </span>
+                                                                    <div class="cmt-del">
+                                                                        <button type="button" class="btn-delete">삭제</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ub-content">
+                                                            <div class="reply-info clear">
+                                                                <div class="cmt-nickbox">
+                                                                    <span class="gallery-writer ub-writer" data-nick="조선 제일 미녀">
+                                                                        <span class="nick_name">
+                                                                            <em title="조선 제일 미녀">조선 제일 미녀</em>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="clear cmt-txtbox">
+                                                                    <p class="usertxt ub-word">
+                                                                        ㅇㅋㅇㅋ 010-1234-1234 문자 하나 남겨줘요ㅎ
+                                                                    </p>
+                                                                </div>
+                                                                <div class="fr clear">
+                                                                    <span class="date-time"> 11.12 09:13:45 </span>
+                                                                    <div class="cmt-del">
+                                                                        <button type="button" class="btn-delete">삭제</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ub-content">
+                                                            <div class="reply-info clear">
+                                                                <div class="cmt-nickbox">
+                                                                    <span class="gallery-writer ub-writer" data-nick="조선제일검">
+                                                                        <span class="nick_name">
+                                                                            <em title="조선제일검">조선제일검</em>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="clear cmt-txtbox">
+                                                                    <p class="usertxt ub-word">
+                                                                        혹시.. 성함이 어떻게 되세요??ㅎ 날짜는 언제로 잡을까요ㅎㅎ  
+                                                                    </p>
+                                                                </div>
+                                                                <div class="fr clear">
+                                                                    <span class="date-time"> 11.12 10:44:02 </span>
+                                                                    <div class="cmt-del">
+                                                                        <button type="button" class="btn-delete">삭제</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ub-content">
+                                                            <div class="reply-info clear">
+                                                                <div class="cmt-nickbox">
+                                                                    <span class="gallery-writer ub-writer" data-nick="조선 제일 미녀">
+                                                                        <span class="nick_name">
+                                                                            <em title="조선 제일 미녀">조선 제일 미녀</em>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="clear cmt-txtbox">
+                                                                    <p class="usertxt ub-word">
+                                                                        이름은 한효주 입니당! ^^ 날짜는 문자로 이야기하죠!ㅎ
+                                                                    </p>
+                                                                </div>
+                                                                <div class="fr clear">
+                                                                    <span class="date-time"> 11.12 10:53:10 </span>
+                                                                    <div class="cmt-del">
+                                                                        <button type="button" class="btn-delete">삭제</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="ub-content">
+                                                            <div class="reply-info clear">
+                                                                <div class="cmt-nickbox">
+                                                                    <span class="gallery-writer ub-writer" data-nick="조선제일검">
+                                                                        <span class="nick_name">
+                                                                            <em title="조선제일검">조선제일검</em>
+                                                                        </span>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="clear cmt-txtbox">
+                                                                    <p class="usertxt ub-word">
+                                                                        아 넵!ㅎㅎ 문자 바로 드릴께여(하트)  
+                                                                    </p>
+                                                                </div>
+                                                                <div class="fr clear">
+                                                                    <span class="date-time"> 11.12 10:57:09 </span>
+                                                                    <div class="cmt-del">
+                                                                        <button type="button" class="btn-delete">삭제</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="ub-content">
+                                            <div class="cmt-info clear">
+                                                <div class="cmt-nickbox">
+                                                    <span class="gallery-writer ub-writer">
+                                                        <span class="nickname">
+                                                            <em title="조선 제일 상남자"> 조선 제일 상남자</em>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="clear cmt-txtbox btn-reply-write-all">
+                                                    <p class="usertxt ub-word"> ㅋㅋㅋㅋㅋㅋ개꿀잼이네 여기 </p>
+                                                </div> 
+                                                <div class="fr clear">
+                                                    <span class="date_time"> 11.20 22:30:18 </span>
+                                                    <div class="cmt-del">
+                                                        <button type="button" class="btn-delete">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="bottom-paging-box">
+                                        <div class="cmt-paging">
+                                            <em> 1 </em>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cmt-write-box clear">
+                                    <div class="fl">
+                                        <div class="user-info-input">
+                                            <input type="text" value="조선 제일 검" readonly="readonly">
+                                        </div>
+                                    </div>
+                                    <div class="cmt-txt-cont">
+                                        <div class="cmt-write">
+                                            <textarea maxlength="400" onlick="reply_length_count()"></textarea>
+                                        </div>
+                                        <div class="cmt-cont-bottom clear">
+                                            <div class="fr">
+                                                <button class="btn-blue small repley-add">등록</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-bottom-btnbox">
+                            <div class="fl">
+                                <button type="button" class="btn-blue concept"> 전체글 </button>
+                                <button type="button" class="btn-white concept"> 개념글 </button>
+                            </div>
+                            <div class="fr">
+                                <button type="button" class="btn-grey modify"> 수정 </button>
+                                <button type="button" class="btn-grey cancle"> 삭제 </button>
+                                <button type="button" class="btn-blue write"> 글쓰기 </button>
+                            </div>
+                        </div>
+                    </article>
+                    <section class="primary">
+                        <div class="board-list-wrap">
+                            <div class="board-list"> 
+                                <div class="board-list-head">
+                                    <div class="writer"> 글쓴이 </div>
+                                    <div class="title"> 제목 </div>
+                                    <div class="date"> 작성일 </div>
+                                    <div class="view-num"> 조회수 </div>
+                                    <div class="like-num"> 추천수 </div>
+                                </div>
+                                <div class="board-list-body">
+                                    <div class="item">
+                                        <div class="writer"> 너구리 </div>
+                                        <div class="title"> <a href="#"> Legends Never die </a> </div>
+                                        <div class="date"> 2020-11-04 </div>
+                                        <div class="view-num"> 89 </div>
+                                        <div class="like-num"> 10 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 클템 </div>
+                                        <div class="title"> <a href="#"> LCK is King </a> </div>
+                                        <div class="date"> 2020-10-29 </div>
+                                        <div class="view-num"> 99 </div>
+                                        <div class="like-num"> 11 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> Damwon Gaming </div>
+                                        <div class="title"> <a href="#"> 2020 Worlds Champion </a> </div>
+                                        <div class="date"> 2020-10-25 </div>
+                                        <div class="view-num"> 189 </div>
+                                        <div class="like-num"> 101 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 쇼메이커 </div>
+                                        <div class="title"> <a href="#"> King's Back </a> </div>
+                                        <div class="date"> 2020-10-23 </div>
+                                        <div class="view-num"> 99 </div>
+                                        <div class="like-num"> 33 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 쵸비상 </div>
+                                        <div class="title"> <a href="#"> DRX is king </a> </div>
+                                        <div class="date"> 2020-10-22 </div>
+                                        <div class="view-num"> 109 </div>
+                                        <div class="like-num"> 21 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 고스트 </div>
+                                        <div class="title"> <a href="#"> Damwon is Legend </a> </div>
+                                        <div class="date"> 2020-10-19 </div>
+                                        <div class="view-num"> 44 </div>
+                                        <div class="like-num"> 13 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 너구리 </div>
+                                        <div class="title"> <a href="#"> Legends Never die </a> </div>
+                                        <div class="date"> 2020-11-04 </div>
+                                        <div class="view-num"> 89 </div>
+                                        <div class="like-num"> 10 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 클템 </div>
+                                        <div class="title"> <a href="#"> LCK is King </a> </div>
+                                        <div class="date"> 2020-10-29 </div>
+                                        <div class="view-num"> 99 </div>
+                                        <div class="like-num"> 11 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> Damwon Gaming </div>
+                                        <div class="title"> <a href="#"> 2020 Worlds Champion </a> </div>
+                                        <div class="date"> 2020-10-25 </div>
+                                        <div class="view-num"> 189 </div>
+                                        <div class="like-num"> 101 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 쇼메이커 </div>
+                                        <div class="title"> <a href="#"> King's Back </a> </div>
+                                        <div class="date"> 2020-10-23 </div>
+                                        <div class="view-num"> 99 </div>
+                                        <div class="like-num"> 33 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 쵸비상 </div>
+                                        <div class="title"> <a href="#"> DRX is king </a> </div>
+                                        <div class="date"> 2020-10-22 </div>
+                                        <div class="view-num"> 109 </div>
+                                        <div class="like-num"> 21 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 고스트 </div>
+                                        <div class="title"> <a href="#"> Damwon is Legend </a> </div>
+                                        <div class="date"> 2020-10-19 </div>
+                                        <div class="view-num"> 44 </div>
+                                        <div class="like-num"> 13 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 너구리 </div>
+                                        <div class="title"> <a href="#"> Legends Never die </a> </div>
+                                        <div class="date"> 2020-11-04 </div>
+                                        <div class="view-num"> 89 </div>
+                                        <div class="like-num"> 10 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 클템 </div>
+                                        <div class="title"> <a href="#"> LCK is King </a> </div>
+                                        <div class="date"> 2020-10-29 </div>
+                                        <div class="view-num"> 99 </div>
+                                        <div class="like-num"> 11 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> Damwon Gaming </div>
+                                        <div class="title"> <a href="#"> 2020 Worlds Champion </a> </div>
+                                        <div class="date"> 2020-10-25 </div>
+                                        <div class="view-num"> 189 </div>
+                                        <div class="like-num"> 101 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 쇼메이커 </div>
+                                        <div class="title"> <a href="#"> King's Back </a> </div>
+                                        <div class="date"> 2020-10-23 </div>
+                                        <div class="view-num"> 99 </div>
+                                        <div class="like-num"> 33 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 쵸비상 </div>
+                                        <div class="title"> <a href="#"> DRX is king </a> </div>
+                                        <div class="date"> 2020-10-22 </div>
+                                        <div class="view-num"> 109 </div>
+                                        <div class="like-num"> 21 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 고스트 </div>
+                                        <div class="title"> <a href="#"> Damwon is Legend </a> </div>
+                                        <div class="date"> 2020-10-19 </div>
+                                        <div class="view-num"> 44 </div>
+                                        <div class="like-num"> 13 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 너구리 </div>
+                                        <div class="title"> <a href="#"> Legends Never die </a> </div>
+                                        <div class="date"> 2020-11-04 </div>
+                                        <div class="view-num"> 89 </div>
+                                        <div class="like-num"> 10 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 클템 </div>
+                                        <div class="title"> <a href="#"> LCK is King </a> </div>
+                                        <div class="date"> 2020-10-29 </div>
+                                        <div class="view-num"> 99 </div>
+                                        <div class="like-num"> 11 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> Damwon Gaming </div>
+                                        <div class="title"> <a href="#"> 2020 Worlds Champion </a> </div>
+                                        <div class="date"> 2020-10-25 </div>
+                                        <div class="view-num"> 189 </div>
+                                        <div class="like-num"> 101 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 쇼메이커 </div>
+                                        <div class="title"> <a href="#"> King's Back </a> </div>
+                                        <div class="date"> 2020-10-23 </div>
+                                        <div class="view-num"> 99 </div>
+                                        <div class="like-num"> 33 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 쵸비상 </div>
+                                        <div class="title"> <a href="#"> DRX is king </a> </div>
+                                        <div class="date"> 2020-10-22 </div>
+                                        <div class="view-num"> 109 </div>
+                                        <div class="like-num"> 21 </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="writer"> 고스트 </div>
+                                        <div class="title"> <a href="#"> Damwon is Legend </a> </div>
+                                        <div class="date"> 2020-10-19 </div>
+                                        <div class="view-num"> 44 </div>
+                                        <div class="like-num"> 13 </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="board-btns">   
+                                <input class="all-board" type="button" value="전체글">
+                                <input class="interest-board" type="button" value="인기글" >
+                                <input class="fr write-board" type="button" value="글쓰기" >
+                            </form>
+                        
+                            <div class="paging">
+                                <a href="#" class="bt first"> 처음 </a>
+                                <a href="#" class="bt prev"> 이전 </a>
+                                <a href="#" class="num"> 1 </a>
+                                <a href="#" class="num"> 2 </a>
+                                <a href="#" class="num"> 3 </a>
+                                <a href="#" class="num"> 4 </a>
+                                <a href="#" class="num"> 5 </a>
+                                <a href="#" class="num"> 6 </a>
+                                <a href="#" class="num"> 7 </a>
+                                <a href="#" class="num"> 8 </a>
+                                <a href="#" class="num"> 9 </a>
+                                <a href="#" class="bt next"> 다음 </a>
+                                <a href="#" class="bt last"> 마지막 </a>
+                            </div>
+                            <form class="board-search-form">
+                                <select class="select_area">
+                                    <option class=""> 전체 </option>
+                                    <option class=""> 글쓴이 </option>
+                                    <option class=""> 제목 </option>
+                                    <option class=""> 카테고리 </option>
+                                </select>
+                                <input type="search">
+                                <input class="search-btn" type="submit" value="검색">
+                            </form>
+                        </div>
+                    </section>
+                </section>
+            </main>
+        </div>
+    
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <h2 class="ir_su">푸터 영역</h2>
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">사이트 도움말</a></li>
+                        <li><a href="#">사이트 이용약관</a></li>
+                        <li><a href="#">사이트 운영규칙</a></li>
+                        <li><a href="#"><strong>개인정보 취급 방침</strong></a></li>
+                        <li><a href="#">책임의 한계와 법적고지</a></li>
+                        <li><a href="#">게시 중단 요청</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <address>
+                        Copyright&copy;Projectsea Company All Right Reserved
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

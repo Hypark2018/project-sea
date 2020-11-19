@@ -1,0 +1,127 @@
+body {
+	background: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+.pshead { position: relative; width: 1050px; height: 105px; margin: 0 auto; background: #fff; }
+.width1160 .pshead,
+.width1160 .gnb,
+.width1160 #container,
+.width1160 .info-policy,
+.width1160 .copyright { width: 1160px; }
+
+.width1160 #container { margin: 20px auto 0; }
+
+#container { width: 1050px; margin: 20px auto 0; }
+
+
+.ps-logo { overflow: hidden; position: absolute; left: 10px; top: 35px; text-align: center; }
+.ps-logo a { display: block; float: left; }
+
+
+.width1160 .wrap-search { left: 384px; }
+.width1160 .top-search { width: 454px; }
+.width1160 .inner-search { width: 404px; }
+.width1160 .in-keyword { width: 386px; }
+.top-search { width: 404px; height: 44px; border: 1px solid #3C63D9; background: #4a57a8; }
+
+
+.wrap-search { position: absolute; left: 322px; top: 39px; }
+.inner-search { float: left; width: 354px; background: #fff; margin: 5px 0 0 5px; }
+.in-keyword { width: 336px; height: 34px; padding: 0 9px; border: none; background: transparent; outline: none; color: #333; font-size: 14px; font-weight: bold; }
+.btn-search { float: left; width: 45px; height: 44px; background-position: 0 -89px; }
+
+.area-links { position: absolute; top: 9px; right: 0; }
+.area-links ul { overflow: hidden; line-height: 19px; }
+.area-links li { float: left; }
+.area-links li:first-child::before { display: none; }
+.area-links li::before { content: "|"; color: #ccc; font-size: 11px; line-height: 11px; padding: 0 3px 0 5px; }
+.area-links a { font-size: 11px; color: #555; }
+
+.blind { position: absolute; overflow: hidden; visibility: hidden; margin: -1px; width: 0px; height: 0px; top: -9999px; font-size: 0; }
+
+.sp-img { background-image: url(https://nstatic.dcinside.com/dc/w/images/sp/sp_img.png?1110); background-repeat: no-repeat; }
+
+
+
+.primary {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.wrap {
+    padding: 50px;
+    width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.wrap h1 {
+    border-bottom: 3px solid #3C63D9;
+    padding-bottom: 12px;
+    font-size: 32px;
+    letter-spacing: -2px;
+}
+
+.wrap form {
+    margin-top: 30px;
+}
+
+
+.wrap dd {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    width: 100%;
+}
+
+.wrap dl {
+    font-size: 0;
+    margin-top: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.wrap dl:first-child {
+    margin-top: 0;
+}
+
+.wrap input[type="text"],
+.wrap input[type="password"] {
+    padding: 15px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.wrap input[type="submit"] {
+    display: block;
+    margin: 50px auto 0 auto;
+    padding: 20px 40px;
+    background-color: #3C63D9;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    width: 50%;
+}
+
+
+
+#footer { 
+    margin-top: 150px;
+    border-top: 1px solid lightgray;
+    order: 2;
+    width: 100%;
+}
+
+.footer {padding: 25px 0; text-align: center;}
+.footer ul {margin-bottom: 20px;}
+.footer li {position: relative; display: inline; padding: 0 7px 0 10px;}
+.footer li:before {content: ''; width: 1px; height:12px; background: #ccc; position: absolute;
+left: 0; top: 2px;}
+.footer li:first-child:before { width: 0; height: 0; }
+

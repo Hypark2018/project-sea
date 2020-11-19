@@ -1,0 +1,96 @@
+#wrap {  width: 1160px; margin: 0 auto;  background-color: white;}
+#header {}
+#container { margin: 0 auto; }
+#footer { border-top: 1px solid lightgray;}
+
+/* 헤더 버튼s */
+.member-info {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 50px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.member-info a {
+    display: inline-block;
+}
+
+.member-info a.mem-bt {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    
+}
+
+.member-info a.mem-bt:hover {
+    color: #3C63D9;
+}
+
+.header {  }
+.header .header-menu { text-align: right; }
+.header .header-menu a { color: #555; padding: 10px; display: inline-block; text-decoration: none;}
+.header .header-menu a:hover { color: #3C63D9;  }
+
+
+
+/* 갤러리 헤더 부분 */
+.gallery-header { width: 1050px; margin: 0 auto; background: #3C63D9; font-size: 14px; color: #fff;}
+.gallery-header .gallery-top-bar { position: relative; width: 1048px; height: 66px; padding: 17px 0 15px; margin: 0 auto; border: 1px #3C63D9 solid; }
+.gallery-top-bar .gallery_info { float: left; height: 28px; padding: 0 20px 0 15px; line-height: 28px; border-radius: 0 15px 15px 0; background: url(https://nstatic.dcinside.com/dc/w/images/bg.png) repeat-x 0 0; }
+.gallery_info .nick_name { color: #fff200; }
+
+.primary { margin: 0 auto; }
+.gallery-container { width: 1160px; min-height: 600px; padding: 35px 0 0px; margin: 0 auto; background: #fff; }
+.gallery-container .gallery-menu { overflow: hidden; margin-bottom: 32px; }
+.gallery-menu li { position: relative; float: left; margin-left: 2px; }
+.gallery-menu li:first-child { margin-left: 0; }
+.gallery-menu li a {display: block; width: 102px; height: 35px; padding-right: 1px; line-height: 37px; border: 1px #3C63D9 solid; border-radius: 2px; font-size: 14px; font-weight: bold; text-align: center;}
+.gallery-menu li.on a { background: #3C63D9; color: #fff; text-shadow: 0px -1px #3C63D9; }
+
+
+.gallery-menu,
+.gallery-content {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.gallery-content {padding-bottom: 37px;}
+.content-header { height: 32px; vertical-align: top; border-bottom: 2px solid #3C63D9; }
+.content-header .tit { float: left; padding-top: 2px; color: #d31900; font-size: 14px; }
+.content-header .tit::before { content: ""; display: inline-block; width:3px; height: 3px; background: #d31900; vertical-align: 5px; margin: 0 6px 0 4px; }
+.content-header .tit .num { padding-left: 3px; font-weight: normal; }
+
+
+.content-box { clear: both; }
+.content-box .content-listbox { border: 1px #3C63D9 solid; border-width: 2px 0 1px 0; }
+.content-listbox li { overflow: hidden; border-top: 1px #ddd solid; }
+.content-listbox li:first-child { border-top: none; }
+.content { float: left; font-size: 13px; color: #555; }
+.content.box1 { width: 22%; }
+.content.box1 > a { padding: 0 1px 0 15px; }
+.content.box2 { width: 58%; }
+.content.box2 > a { padding: 0 27px 0 32px; }
+.content.box3 { width: 20%; text-align: center; }
+.content .info { padding: 0 15px 0 0px; }
+.content > a,
+.content .info,
+.content > .txt { overflow: hidden; display: block; max-height: 60px; line-height: 20px; margin: 17px 0 18px; word-break: break-all; word-wrap: break-word; }
+
+
+
+
+
+
+/* 푸터 */
+#footer { order: 2; width: 1160px; margin: 0 auto;  background-color: white;}
+
+.footer {padding: 25px 0; text-align: center;}
+.footer ul {margin-bottom: 20px;}
+.footer li {position: relative; display: inline; padding: 0 7px 0 10px;}
+.footer li:before {content: ''; width: 1px; height:12px; background: #ccc; position: absolute;
+left: 0; top: 2px;}
+.footer li:first-child:before { width: 0; height: 0; }

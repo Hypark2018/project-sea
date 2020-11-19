@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/ui-page.css">
+    <link rel="stylesheet" href="css/write-page.css">
+</head>  
+<body>
+    <div id="top" class="pswrap width1160">
+        <div class="weClass-id" style="display:none">  </div>
+        <!-- header -->
+        <header class="psheader">
+            <div class="pshead">
+                <h1 class="ps-logo">
+                    <a href="Main-page.html"> <img src="images/page-logo2.png" style="width: 266px; height: 50px;"> </a>
+                </h1>
+                <div id="search-wrap" class="wrap-search"> 
+                    <form id="searchform" name="search-process" class="search-smit">
+                        <fieldset> 
+                            <div class="top-search">
+                                <div class="inner-search">
+                                    <input class="in-keyword" type="text" name="search" id="preSWord" title="검색어 입력" value placeholder="프로젝트 & 통합검색">
+                                </div>
+                                <button type="submit" class="sp-img btn-search"> <span class="blind"> 검색 </span> </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="area-links">
+                    <ul>
+                        <li> <a href="login-page.html" class="mem-bt "> 로그인 </a> </li>
+                        <li> <a href="signup-page.html" class="mem-bt "> 회원가입 </a> </li>
+                        <li> <a href="my-page.html" class="mem-bt "> 마이페이지</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- menu -->
+        <ul class="menu">
+            <li class="menu-list"> 
+                <a href="board-page.html" class="menu-content"> 공지 </a>
+            </li>
+            <li class="menu-list"> 
+                <a href="board-page.html" class="menu-content"> 자유 </a>
+            </li>
+            <li class="menu-list dropdown"> 
+                <a href="javascript:void(0)" class="menu-content dropbtn"> 프로젝트 </a>
+                <div class="dropdown-content"> 
+                    <a href="project-will-page.html"> 프로젝트 모집 </a>
+                    <a href="project-ing-page.html"> 프로젝트 진행중 </a>
+                    <a href="project-ed-page.html"> 프로젝트 완료 </a>
+                </div>
+            </li>
+            <li class="menu-list"> 
+                <a href="board-page.html" class="menu-content"> 학과 </a>
+            </li>
+            <li class="menu-list"> 
+                <a href="https://entrance.ptu.ac.kr/contents/www/cor/schedule.html" class="menu-content"> 학사일정 </a>
+            </li>
+        </ul>
+
+        <!-- primary -->
+        <main id="container">
+            <section>
+                <header>
+                    <div class="page_head clear">
+                        <div class="fl">
+                            <h2>
+                                <a href="#"> 보고서 글쓰기 </a>
+                            </h2>
+                        </div>
+                    </div>
+                </header>
+                <article>
+                    <div class="board-wrap"> 
+                        <div class="board-box">
+                            <div class="visit-history">
+                            </div>
+                        </div> 
+                    </div>
+                </article>
+                <article id="write-wrap" class="clear">
+                    <form action="" name="write" id="write" method="post" accept-charset="utf-8" novalidate="novalidate">
+                        <div class="clear">
+                            <fieldset>
+                                <div class="input-box input-write-tit">
+                                    <input id="subject" placeholder="제목을 입력해주세요." class="put-inquiry f-blank" type="text" name="subject" maxlength="40">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="editor-wrap">
+                            <div id="tx-trex-container" class="tx-editor-container" style="z-index: 4" data-boxonly>
+                                <div id="tx-sidebar" class="tx-sidebar">
+                                    <div class="tx-sidebar-boundary">
+                                        <ul class="tx-bar tx-bar-left tx-nav-attach">
+                                            <li class="tx-list" style="z-index: 4;">
+                                                <div unselectable="on" id="tx-image" class="tx-image tx-btn-trans">
+                                                    <a href="javascript:;" title="사진" class="tx-text">사진</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="tx-canvas" class="tx-canvas">
+                                    <div id="tx-canvas-wysiwyg-holder" class="tx-holder" style="display:block;height: 398px;">
+                                        <div class="tx-table-row-resize-dragger" style="position: absolute; overflow: hidden; top: 0px; left: 0px; width: 100%; height: 3px; cursor: row-resize; display: none;"></div>
+                                        <div class="tx-table-col-resize-dragger" style="position: absolute; overflow: hidden; top: 0px; left: 0px; width: 3px; height: 100%; cursor: col-resize; display: none;"></div>
+                                        <iframe src="space.html" allowtransparency="true" frameborder="0" style="height: 400px;">
+                                        </iframe>
+                                    </div>
+                                    <div class="tx-source-deco">
+                                        <div id="tx-canvas-source-holder" class="tx-holder" style="display: none;">
+                                            <textarea id="tx-canvas-source" rows="30" cols="30" style="background-color: rgb(255, 255, 255); color: rgb(18, 52, 86); height: 396px;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div id="tx-canvas-text-holder" class="tx-holder" style="display: none;">
+                                        <textarea id="tx-canvas-text" rows="30" cols="30"></textarea>
+                                    </div>
+                                </div>
+                                <div id="tx-resizer" class="tx-resize-bar">
+                                    <div class="tx-resize-bar-bg"></div>
+                                    <img id="tx-resize-holder" src="https://nstatic.dcinside.com/dc/w/images/editor/icon/editor/skin/01/btn_drag01.gif" width="58" height="12" unselectable="on" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-box write fr">
+                            <button type="button" class="btn-grey cancle" onclick="$('#leave_confirm_box').show();">취소</button>
+                            <button type="image" class="btn-blue btn-svc write">등록</button>
+                            <!-- 180920 글 작성을 취소하시겠습니까? 팝업 레이어 -->
+                            <div id="leave_confirm_box" class="pop-wrap type2" style="left:50%;top:-322px;margin-left:-619px;display:none">
+                                <div class="pop-content write-ly">
+                                    <div class="pop-head bg"><h3>글쓰기</h3></div>
+                                    <div class="write-cont">
+                                        <p class="txt">글 작성을 취소하시겠습니까?</p>
+                                        <div class="btn-box">
+                                            <button type="button" class="btn-grey small" onclick="$('#leave_confirm_box').hide();">취소</button>
+                                            <button type="button" class="btn-blue small" onclick="history.back();">확인</button>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="poply-whiteclose" onclick="$('#leave_confirm_box').hide();"><span class="blind">레이어 닫기</span><em class="sp-img icon-whiteclose"></em></button>
+                                </div>
+                            </div>		
+                            <div class="loading-layertype" style="position:absolute;margin-top:-30px;margin-left:-60px;display:none;">
+                                <img src="https://nstatic.dcinside.com/dc/w/images/l_load_1.gif" alt="">
+                            </div>
+                        </div>
+                        <div id="captcha-wrapper" class="robot-box fr"></div>
+                    </form>
+                </article>
+            </section>
+        </main>
+
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <h2 class="ir_su">푸터 영역</h2>
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">사이트 도움말</a></li>
+                        <li><a href="#">사이트 이용약관</a></li>
+                        <li><a href="#">사이트 운영규칙</a></li>
+                        <li><a href="#"><strong>개인정보 취급 방침</strong></a></li>
+                        <li><a href="#">책임의 한계와 법적고지</a></li>
+                        <li><a href="#">게시 중단 요청</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <address>
+                        Copyright&copy;Projectsea Company All Right Reserved
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

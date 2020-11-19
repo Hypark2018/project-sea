@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+    <link rel="stylesheet" href="css/main-page.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/slick.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="skip">
+        <a href="#cont_nav"> 전체 메뉴 바로가기 </a>
+        <a href="#cont_ban"> 배너 영역 바로가기 </a>
+        <a href="#cont_cont"> 컨텐츠 영역 바로가기 </a>
+    </div>
+    
+    <div id="wrap">
+        <div id=header>
+            <div class="container"> 
+                <div class="header">
+                    <div class="header-menu">
+                        <a href="login-page.html"> 로그인 </a>
+                        <a href="signup-page.html"> 회원가입 </a>
+                        <a href="my-page.html"> 마이페이지 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contents">
+            <div id="cont_nav">
+                <div class="container"> 
+                    <h2 class="ir_su"> 이번달의 Top 게시글 </h2>
+                    <div class="nav">
+                        <div>
+                            <h3> 커뮤니티 개념글 </h3>
+                            <ol>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 학과 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3> 프로젝트 개념글 </h3>
+                            <ol>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 학과 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 학과 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 학과 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 학과 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                            </ol>
+                        </div>
+                        <div class="last">
+                            <h3> 학과 개념글 </h3>
+                            <ol>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 학과 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 학과 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                                <li><a href="#"> 자유 게시판 </a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cont_tit">
+                <div class="container"> 
+                    <div class="tit">
+                        <h2> 개념 글 보기 </h2>
+                        <a href="#" class="btn"> <span class="ir_pm"> 전체메뉴 </span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="cont_ban">
+                <div class="container"> 
+                    <div class="ban">
+                        <!-- <a href="#" class="prev"> <span class="ir_pm">이전 이미지</span></a>    
+                        <ul>
+                            <li class="ban_img1"><a href="#"><img src="images/banner_img1.png" alt="메인 베너 이미지1"></a></li>
+                            <li class="ban_img2"><a href="#"><img src="images/banner_img2.png" alt="메인 베너 이미지2"></a></li>
+                            <li class="ban_img3"><a href="#"><img src="images/banner_img3.jpg" alt="메인 베너 이미지3"></a></li>
+                        </ul>
+                        <a href="#" class="next"> <span class="ir_pm">다음 이미지</span></a>   -->
+
+                        <div class=""><a href="#"><img src="images/banner_img1.png" alt="메인 배너 이미지1"></a></div>
+                        <div class=""><a href="#"><img src="images/banner_img2.png" alt="메인 배너 이미지2"></a></div>
+                        <div class=""><a href="#"><img src="images/banner_img3.png" alt="메인 배너 이미지3"></a></div>
+                        <div class=""><a href="#"><img src="images/banner_img4.png" alt="메인 배너 이미지1"></a></div>
+                        <div class=""><a href="#"><img src="images/banner_img5.png" alt="메인 배너 이미지2"></a></div>
+                        <div class=""><a href="#"><img src="images/banner_img6.png" alt="메인 배너 이미지3"></a></div>
+                    </div>    
+                </div>
+            </div>
+            <div id="cont_cont">
+                <div class="container"> 
+                    <div class="cont">
+                        <div class="column col1">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit"> 학과 게시판 </span></h3>
+                            <p class="ico_desc"></p>
+                            <!-- 게시판1 -->
+                            <div class="notice">
+                                <h4> 공지사항 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글1 </a></li>
+                                    <li><a href="#"> 가상의 공지글2 </a></li>
+                                    <li><a href="#"> 가상의 공지글3 </a></li>
+                                    <li><a href="#"> 가상의 공지글4 </a></li>
+                                    <li><a href="#"> 가상의 공지글5 </a></li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!-- //게시판 -->
+                            <!-- 게시판2-->
+                            <div class="notice2">
+                                <h4> 학과 게시판 최신글 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-1</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-2</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-3</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-4</span></li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-5</span> </li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                        </div> 
+                        <!-- ///col1 -->
+                        <div class="column col2">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit"> 커뮤니티 게시판 </span></h3>
+                            <p class="ico_desc"></p>
+                            <!-- 게시판1 -->
+                            <div class="notice">
+                                <h4> 공지사항 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글1 </a></li>
+                                    <li><a href="#"> 가상의 공지글2 </a></li>
+                                    <li><a href="#"> 가상의 공지글3 </a></li>
+                                    <li><a href="#"> 가상의 공지글4 </a></li>
+                                    <li><a href="#"> 가상의 공지글5 </a></li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!-- //게시판 -->
+                            <!-- 게시판2-->
+                            <div class="notice2">
+                                <h4> 자유 게시판 최신글 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-1</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-2</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-3</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-4</span></li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-5</span> </li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                        </div> 
+                        <!-- //col2 -->
+                        <div class="column col3">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit"> Project_Sea 회원 정보 </span></h3>
+                            <p class="ico_desc"> </p>
+                            <!-- 로그인 --> 
+                            <div id="login-wrap">
+                                <h4 class="ir_su">로그인 정보</h4>
+                                <form id="login_form" name="login_form" action="post">
+                                    <fieldset>
+                                        <legend class="ir_su">로그인 및 관련 설정</legend>
+                                        <div class="login_header"> 
+                                            <h5 class="ir_su">로그인 보안</h5>
+                                            <div class="lh_check">
+                                                <input id="infor_check" type="checkbox" class="input_check">
+                                                <label for="infor_check">로그인 상태 유지</label>
+                                            </div>
+                                            <div class="lh_ip">
+                                                IP보안 <em>ON</em>
+                                            </div>
+                                        </div>
+                                        <div class="login_content">
+                                             <h5 class="ir_su">로그인 영역</h5>
+                                             <div class="lc_text">
+                                                 <label for="uid" class="ir_su"> 아이디 </label>
+                                                 <input type="text" id="uid" name="uid" class="input_text" maxlength="20" placeholder="아이디">
+                                                 <label for="upw" class="ir_su"> 비밀번호 </label>
+                                                 <input type="password" id="upw" name="upw" class="input_text" maxlength="20" placeholder="비밀번호">
+                                             </div>
+                                             <button class="lc_btn" type="submit"> 로그인 </button>
+                                        </div>
+                                        <div class="login_footer">
+                                            <h5 class="ir_su"> 로그인 문제해결 </h5>  
+                                            <ul>
+                                                <li><a href="#"><strong>회원가입</strong></a> / </li>
+                                                <li><a href="#">로그인</a>&middot;<a href="#">비밀번호 찾기</a></li>
+                                            </ul>  
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <!-- //로그인 --> 
+                            <!-- 팝업 -->
+                            <div class="popup">
+                                <h4>Advertisement</h4>
+                                <ul>
+                                    <li class="layer1"><a href="#"><img src="images/sban01.png" alt="이미지1"></a></li>
+                                    <li class="layer2"><a href="#"><img src="images/sban02.png" alt="이미지2"></a></li>
+                                    <li class="last layer3"><a href="#"><img src="images/sban03.png" alt="이미지3"></a></li>
+                                </ul>
+                            </div>
+                            <!-- //팝업 -->
+                        </div>
+                        <!-- //col3 -->
+                        <div class="column col4">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit"> 프로젝트 모집 </span></h3>
+                            <p class="ico_desc"></p>
+                            <!-- 게시판1 -->
+                            <div class="notice">
+                                <h4> 공지사항 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글1 </a></li>
+                                    <li><a href="#"> 가상의 공지글2 </a></li>
+                                    <li><a href="#"> 가상의 공지글3 </a></li>
+                                    <li><a href="#"> 가상의 공지글4 </a></li>
+                                    <li><a href="#"> 가상의 공지글5 </a></li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!-- //게시판 -->
+                            <!-- 게시판2-->
+                            <div class="notice2">
+                                <h4> 프로젝트 "모집" 최신글 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-1</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-2</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-3</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-4</span></li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-5</span> </li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                        </div> 
+                        <!-- //col4 -->
+                        <div class="column col5">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit"> 프로젝트 진행중 </span></h3>
+                            <p class="ico_desc"></p>
+                            <!-- 게시판1 -->
+                            <div class="notice">
+                                <h4> 공지사항 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글1 </a></li>
+                                    <li><a href="#"> 가상의 공지글2 </a></li>
+                                    <li><a href="#"> 가상의 공지글3 </a></li>
+                                    <li><a href="#"> 가상의 공지글4 </a></li>
+                                    <li><a href="#"> 가상의 공지글5 </a></li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!-- //게시판 -->
+                            <!-- 게시판2-->
+                            <div class="notice2">
+                                <h4> 프로젝트 "진행" 최신글 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-1</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-2</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-3</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-4</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-5</span> </li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                        </div> 
+                        <!-- //col5 -->
+                        <div class="column col6">
+                            <h3><span class="ico_img ir_pm">아이콘</span><span class="ico_tit"> 프로젝트 완료 </span></h3>
+                            <p class="ico_desc"></p>
+                            <!-- 게시판1 -->
+                            <div class="notice">
+                                <h4> 공지사항 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글1 </a></li>
+                                    <li><a href="#"> 가상의 공지글2 </a></li>
+                                    <li><a href="#"> 가상의 공지글3 </a></li>
+                                    <li><a href="#"> 가상의 공지글4 </a></li>
+                                    <li><a href="#"> 가상의 공지글5 </a></li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                            <!-- //게시판 -->
+                            <!-- 게시판2-->
+                            <div class="notice2">
+                                <h4> 프로젝트 "완료" 최신글 </h4>
+                                <ul>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-1</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-2</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-3</span> </li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-4</span></li>
+                                    <li><a href="#"> 가상의 공지글/가상의 공지글/가상의 공지글/가상의 공지글 </a> <span>2020-11-5</span> </li>
+                                </ul>
+                                <a href="#" class="more ir_pm" title="더보기">더보기</a>
+                            </div>
+                        </div> 
+                        <!-- //col6 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        <div id="footer">
+            <div class="container">
+                <h2 class="ir_su">푸터 영역</h2>
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">사이트 도움말</a></li>
+                        <li><a href="#">사이트 이용약관</a></li>
+                        <li><a href="#">사이트 운영규칙</a></li>
+                        <li><a href="#"><strong>개인정보 취급 방침</strong></a></li>
+                        <li><a href="#">책임의 한계와 법적고지</a></li>
+                        <li><a href="#">게시 중단 요청</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <address>
+                        Copyright&copy;Projectsea Company All Right Reserved
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- layer popup -->
+    <div id="layer">
+        <img src="images/popup01.png " alt="Project_Sea 사이트">
+        <img src="images/popup2.png " alt="Project_Sea 사이트">
+        <img src="images/popup3.png " alt="Project_Sea 사이트">
+        <a href="#" class="close">Close</a>
+    </div>
+    <!-- //layer popup -->
+
+
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main-page.js"></script>
+</body>
+</html>
